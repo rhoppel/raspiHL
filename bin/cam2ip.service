@@ -1,0 +1,11 @@
+ [Unit]
+ Description= cam2ip WebCam
+ After=multi-user.target
+
+ [Service]
+ Type=idle
+ ExecStart=/home/rick/bin/cam2ip  -width 1280 -height 1024 -delay 14 -bind-addr :56000 > /home/rick/cam2ip.log 2>&1
+
+ [Install]
+ WantedBy=multi-user.target
+

@@ -1,0 +1,10 @@
+:set nu
+:set visualbell
+:syntax on
+:set t_Co=256
+:set mouse=a
+":colorscheme ron
+:colorscheme monokai
+":colorscheme elflord
+":colorscheme industry
+":colorscheme slate

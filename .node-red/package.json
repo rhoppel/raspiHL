@@ -1,0 +1,31 @@
+{
+  "name": "node-red-project",
+  "description": "A Node-RED Project",
+  "version": "0.0.1",
+  "dependencies": {
+    "crc": "^3.8.0",
+    "i2c-bus": "^4.0.6",
+    "node-red-admin": "^0.1.3",
+    "node-red-contrib-alexa-local": "^0.3.24",
+    "node-red-contrib-bigtimer": "^2.0.3",
+    "node-red-contrib-chatbot": "~0.15.10",
+    "node-red-contrib-contextbrowser": "0.0.4",
+    "node-red-contrib-ibm-watson-iot": "^0.2.8",
+    "node-red-contrib-mysensors": "^3.2.0",
+    "node-red-contrib-os": "~0.1.7",
+    "node-red-contrib-play-audio": "^2.3.2",
+    "node-red-contrib-ui_list": "~0.1.3",
+    "node-red-contrib-web-worldmap": "~1.5.12",
+    "node-red-dashboard": "~2.11.0",
+    "node-red-node-arduino": "0.0.18",
+    "node-red-node-email": "^1.0.6",
+    "node-red-node-emoncms": "~0.2.1",
+    "node-red-node-google": "~0.1.4",
+    "node-red-node-mongodb": "0.0.14",
+    "node-red-node-ping": "0.0.15",
+    "node-red-node-random": "^0.1.2",
+    "node-red-node-serialport": "^0.6.8",
+    "node-red-node-smooth": "^0.1.0",
+    "wiring-pi": "^2.2.1"
+  }
+}
