@@ -2,7 +2,9 @@
 # some more ls aliases
 #alias ll='ls -l'
 alias h=history
-alias df='df -h'
+alias hcc='cat /dev/null > ~/.bash_history'
+alias hc='tail -n 50 ~/.bash_history > ~/.bash_history; history'
+alias df='df -h' 
 alias vi='vim'
 alias va='vim ~/.bash_aliases'
 alias vb='vim ~/.bashrc'
@@ -26,8 +28,20 @@ alias nmD='mount_Dev.sh'
 alias nuD='mount_Dev.sh -u'
 alias nmH='mount_HS2_Backup.sh'
 alias nuH='mount_HS2_Backup.sh -u'
-alias nmSD='mount_SD_Backup.sh'
-alias nuSD='mount_SD_Backup.sh -u'
+alias nmSD='mount_SD_Backup.shlias sbb='
+#
+#  ssh commands
+#
+alias sbb='ssh debian@bb'
+alias s3b='ssh pi@raspi3b'
+alias s3bw='ssh pi@raspi3b-w'
+alias s3a='ssh pi@raspi3a'
+alias s3aw='ssh pi@raspi3a-w'
+alias s2b='ssh pi@raspi2b'
+alias s2a='ssh pi@raspi2a'
+alias sk9='ssh rhoppel@k9 -p 2222'
+alias sssh='sudo service ssh start'
+alias sb='ssh rhoppel@bluelaptop'
 #
 # "motion" package commands
 #
@@ -101,5 +115,5 @@ alias term='lxterminal --tabs=mc,htop,ncdu,node-red --geometry=120x64 --command=
 #
 HOST=$(hostname)
 B_DEST=~/workspace/Backup/$HOST
-alias b_bash='pushd ~; echo "Destination: $B_DEST " ;cp -r .ssh .bashrc .bash_aliases .vim .vimrc  $B_DEST ;ll -a $B_DEST; popd'
+alias b_bash='pushd ~; echo "Destination: $B_DEST " ;cp -r .smbcredentials .ssh .bashrc .bash_aliases .vim .vimrc  $B_DEST ;ll -a $B_DEST; popd'
 
