@@ -53,7 +53,7 @@ RESPOSITORY: Bitbucket
     ├── phpsysinfo
     └── resources
 
-## Git Suppoer
+## Git Support
 
 ## Tests
 
