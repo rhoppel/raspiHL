@@ -115,5 +115,15 @@ alias term='lxterminal --tabs=mc,htop,ncdu,node-red --geometry=120x64 --command=
 #
 HOST=$(hostname)
 B_DEST=~/workspace/Backup/$HOST
-alias b_bash='pushd ~; echo "Destination: $B_DEST " ;cp -r .smbcredentials .ssh .bashrc .bash_aliases .vim .vimrc  $B_DEST ;ll -a $B_DEST; popd'
+alias b_bash='pushd ~; echo "Destination: $B_DEST " ;nmD; cp -r .smbcredentials .ssh .bashrc .bash_aliases .vim .vimrc  $B_DEST ;ll -a $B_DEST; popd'
 
+alias rc='sudo -A rc_gui'
+alias rp='sudo -A rp_prefapps'
+alias dx='export DISPLAY=:0.0'
+alias dxr='export DISPLAY=:10.0'
+alias startx='startx'
+
+DATETIME=$(date +%Y-%h-%d-%H:%M)
+FNAME=/home/pi_$DATETIME
+alias b_pi='node-red-stop; sudo zip -r $FNAME /home/pi; sudo chown pi:pi $FNAME.zip'
+alias b_pi_move='nmD;mv /home/pi_*.zip /home/pi/workspace/Backup/$HOST'

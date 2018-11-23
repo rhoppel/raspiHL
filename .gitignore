@@ -82,7 +82,7 @@ local.properties
 *.class
 
 #6 Generated files
-bin/
+#bin/
 gen/
 6
 # Gradle files

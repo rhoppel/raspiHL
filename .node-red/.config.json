@@ -683,24 +683,6 @@
     }
    }
   },
-  "node-red-node-sqlite": {
-   "name": "node-red-node-sqlite",
-   "version": "0.3.5",
-   "local": false,
-   "nodes": {
-    "sqlite": {
-     "name": "sqlite",
-     "types": [
-      "sqlitedb",
-      "sqlite"
-     ],
-     "enabled": true,
-     "local": false,
-     "module": "node-red-node-sqlite",
-     "file": "/usr/lib/node_modules/node-red-node-sqlite/sqlite.js"
-    }
-   }
-  },
   "node-red-node-rbe": {
    "name": "node-red-node-rbe",
    "version": "0.2.4",
@@ -1588,6 +1570,42 @@
      "local": true,
      "module": "node-red-contrib-ui_list",
      "file": "/home/pi/.node-red/node_modules/node-red-contrib-ui_list/ui_list.js"
+    }
+   }
+  },
+  "node-red-contrib-sqldbs": {
+   "name": "node-red-contrib-sqldbs",
+   "version": "1.1.8",
+   "local": true,
+   "nodes": {
+    "sqldbs": {
+     "name": "sqldbs",
+     "types": [
+      "sqldbsdatabase",
+      "sqldbs"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-contrib-sqldbs",
+     "file": "/home/pi/.node-red/node_modules/node-red-contrib-sqldbs/sqldbs.js"
+    }
+   }
+  },
+  "node-red-node-sqlite": {
+   "name": "node-red-node-sqlite",
+   "version": "0.3.5",
+   "local": true,
+   "nodes": {
+    "sqlite": {
+     "name": "sqlite",
+     "types": [
+      "sqlitedb",
+      "sqlite"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-node-sqlite",
+     "file": "/home/pi/.node-red/node_modules/node-red-node-sqlite/sqlite.js"
     }
    }
   }
