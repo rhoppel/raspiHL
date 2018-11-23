@@ -91,6 +91,7 @@ fi
 
 # some more ls aliases
 alias ll='ls -hl'
+alias lla='ls -hla'
 alias la='ls -hA'
 alias l='ls -hCF'
 
@@ -104,7 +105,7 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 # enable programmable completion features (you don't need to enable
-# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
+# this, if it's already enabled in /etc/bash.bashrc and /etc/profilae
 # sources /etc/bash.bashrc).
 if ! shopt -oq posix; then
   if [ -f /usr/share/bash-completion/bash_completion ]; then
