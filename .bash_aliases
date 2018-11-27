@@ -28,7 +28,16 @@ alias nmD='mount_Dev.sh'
 alias nuD='mount_Dev.sh -u'
 alias nmH='mount_HS2_Backup.sh'
 alias nuH='mount_HS2_Backup.sh -u'
-alias nmSD='mount_SD_Backup.shlias sbb='
+alias nmSD='mount_SD_Backup.sh'
+alias nmD='mount_Dev.sh'
+
+#
+# mount drive commands
+#
+alias  mWeb="sudo mount -t cifs //HS2/Websites ~/Websites"
+alias  mDev="sudo mount -t cifs //HS2/Development ~/Development"
+alias  uDev="sudo umount ~/Development"
+alias uwork="sudo umount ~/workspace"
 #
 #  ssh commands
 #
@@ -115,7 +124,7 @@ alias term='lxterminal --tabs=mc,htop,ncdu,node-red --geometry=120x64 --command=
 #
 HOST=$(hostname)
 B_DEST=~/workspace/Backup/$HOST
-alias b_bash='pushd ~; echo "Destination: $B_DEST " ;nmD; cp -r .smbcredentials .ssh .bashrc .bash_aliases .vim .vimrc  $B_DEST ;ll -a $B_DEST; popd'
+alias b_bash='pushd ~; echo "Destination: $B_DEST " ;nmD; cp -r .smbcredentials .ssh .bashrc .bash_aliases .profile .vim .vimrc  $B_DEST ;ll -a $B_DEST; popd'
 
 alias rc='sudo -A rc_gui'
 alias rp='sudo -A rp_prefapps'
