@@ -2,11 +2,15 @@
 .cache
 .config
 .dbus
+.git-credentials
 .local/
+.node-red/
 .node-red/node_modules/
 .node-red/context/
 .node-gyp/
 .npm
+.smbcredentials
+.ssh/
 .themes
 .thumbnails
 bin/Archive/
@@ -14,6 +18,7 @@ bin/SDCardTest/iozone3_465/
 Downloads/
 Desktop/
 log2ram/
+script/*.log
 temp/
 wiringPi/
 workspace/
