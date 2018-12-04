@@ -3,6 +3,7 @@
 .config
 .dbus
 .git-credentials
+.homeassistant
 .local/
 .node-red/
 .node-red/node_modules/
@@ -13,15 +14,18 @@
 .ssh/
 .themes
 .thumbnails
+.viminfo
 bin/Archive/
 bin/SDCardTest/iozone3_465/
 Downloads/
 Desktop/
+habridge/
 log2ram/
 script/*.log
 temp/
 wiringPi/
 workspace/
+www/
 
 *.gz
 *.zip
