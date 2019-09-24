@@ -42,12 +42,12 @@ alias uwork="sudo umount ~/workspace"
 #  ssh commands
 #
 alias sbb='ssh debian@bb'
-alias s3b='ssh pi@raspi3b'
-alias s3bw='ssh pi@raspi3b-w'
+alias s2a='ssh root@raspi2a'
+alias s2b='ssh pi@raspi2b'
 alias s3a='ssh pi@raspi3a'
 alias s3aw='ssh pi@raspi3a-w'
-alias s2b='ssh pi@raspi2b'
-alias s2a='ssh pi@raspi2a'
+alias s3b='ssh pi@raspi3b'
+alias s3bw='ssh pi@raspi3b-w'
 alias sk9='ssh rhoppel@k9 -p 2222'
 alias sssh='sudo service ssh start'
 alias sb='ssh rhoppel@bluelaptop'
