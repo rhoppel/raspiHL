@@ -22,6 +22,8 @@ habridge/
 hosts
 script/
 www/
+=======
+.homeassistant
 .local/
 .node-red/
 .node-red/node_modules/
@@ -32,15 +34,18 @@ www/
 .ssh/
 .themes
 .thumbnails
+.viminfo
 bin/Archive/
 bin/SDCardTest/iozone3_465/
 Downloads/
 Desktop/
+habridge/
 log2ram/
 script/*.log
 temp/
 wiringPi/
 workspace/
+www/
 
 *.gz
 *.zip

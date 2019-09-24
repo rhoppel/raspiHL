@@ -11,7 +11,8 @@ alias vb='vim ~/.bashrc'
 alias vh='vim ~/www/index.html'
 alias sa='source ~/.bash_aliases'
 alias sb='source ~/.bashrc'
-alias perms='namei -om' 
+alias perms='namei -om'
+alias vR='vim ./README.md'
 #
 # log file
 alias log_mon='sudo tail -F /var/log/syslog'
@@ -136,3 +137,13 @@ DATETIME=$(date +%Y-%h-%d-%H:%M)
 FNAME=/home/pi_$DATETIME
 alias b_pi='node-red-stop; sudo zip -r $FNAME /home/pi; sudo chown pi:pi $FNAME.zip'
 alias b_pi_move='nmD;mv /home/pi_*.zip /home/pi/workspace/Backup/$HOST'
+
+if [ -e ~/.homeassistant ]; then
+  pushd ~/.homeassistant >> /dev/null
+  if [ -f ./.bash_aliases ]; then
+#    echo "loading aliases for home assistant"
+    . ./.bash_aliases
+  fi
+  cd
+  popd >> /dev/null
+fi
